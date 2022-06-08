@@ -3,4 +3,4 @@ git clone (link HTTPS do repositório)  // clona o repositório remoto para o re
 git status                            // mostra o status dos arquivos "unmodified / modified / unstage"
 git add .                            // colocam os arquivos no status "unstage" - sinaliza que esses arquivos estão prontos para um commit
 git commit -m "mensagem"            // comando que prepara os arquivos para serem enviados para o repositório remoto - adicionando meta dados(autor,identificador,data)
-git push origin man                // envia os arquivos para o repositório remoto (GitHub)
+git push origin main               // envia os arquivos para o repositório remoto (GitHub)
