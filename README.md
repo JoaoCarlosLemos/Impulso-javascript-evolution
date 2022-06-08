@@ -4,5 +4,5 @@
  **DESCRIÇÃO :** \
  Repositório criado para armazenar os arquivos do 'Desafio de Projeto'
 
-**LINKS ÚTEIS** \
+**LINKS ÚTEIS :** \
 [Sintaxe Basica Markdown](https://www.markdownguide.org/basic-syntax/)
