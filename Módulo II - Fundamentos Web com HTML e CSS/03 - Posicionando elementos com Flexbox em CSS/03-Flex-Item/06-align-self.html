@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align-Self</title>
+
+    <!--
+
+        ----- ALIGN-SELF -----
+
+        - define um alilhamento expecífico -INDIVIDUAL- do item dentro do container
+
+        -------------------------------------------------------------------------------------------
+        OBS - por ser uima propriedade aplicada no item, não pode haver um 'align-items:' definido
+        -------------------------------------------------------------------------------------------
+
+        VALORES
+
+        auto        - valor padrão - irá respeitar definição de align-items do container
+        flex-start  - início do container
+        flex-end    - final do container
+        center      - relativo ao centro de acordo com o eixo
+        stretch     - ocupa todo os espaços relativos
+        baseline    - utiliza a linha base da tipografia
+
+    -->
+
+    <style>
+
+        body{
+            background: white;
+            color:black;
+            margin-top:10px;
+        }
+
+        h1{
+            margin: 4px;
+            font-size: 16px;
+        }
+
+        .container{
+            max-width:350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex; /*inicializador do contener*/
+            
+        }
+
+        .align-items-center{
+            align-items: center; /*alinha os itens conforme o seu eixo do container*/
+        }
+
+        .flex-direction-columun{
+            flex-direction: column; /*faz o direcionamento dos itens (Coluna)*/
+        }
+
+        .item{
+            background-color: brown;
+            color:white;
+            text-align:center;
+            font-size: 24px;
+            margin:5px;
+        }
+        
+        .auto{
+            align-self: auto; /*valor padrão - irá respeitar definição de align-items do container*/
+        }
+
+        .flex-start{
+            align-self: flex-start; /*início do container*/
+        }
+
+        .flex-end{
+            align-self: flex-end; /*final do container*/
+        }
+
+        .center{
+            align-self: center; /* relativo ao centro de acordo com o eixo*/
+        }
+
+        .stretch{
+            align-self: stretch; /*ocupa todo os espaços relativos*/
+        }
+
+        .baseline{
+            align-self: baseline; /*utiliza a linha base da tipografia*/
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <br>
+    <h1>----- LINHA -----</h1>
+
+    <h1>align-self: auto</h1>
+    <div class="container align-items-center">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem Ipsum is therofore always free from repetition</div>
+        <div class="item auto">ITEM 4</div>
+    </div>
+
+    <!-- &nbsp : adiciona um espaço em branco no texto -->
+    <br>
+    <h1>AAA: &nbsp &nbspalign-self: flex-start</h1>
+    <h1>123: &nbsp &nbsp align-self: flex-end</h1>
+    <h1>Lorem:           align-self: stretch</h1>
+    <h1>ITEM 4:          align-self: center</h1>
+    <br>
+    <div class="container">
+        <div class="item flex-start">AAA</div>
+        <div class="item flex-end">123</div>
+        <div class="item stretch">Lorem Ipsum is therofore always free from repetition</div>
+        <div class="item center">ITEM 4</div>
+    </div>
+
+    <br>
+    <h1>----- COLUNA -----</h1>
+
+    <h1>align-self: auto</h1>
+    <div class="container align-items-center flex-direction-columun">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem Ipsum is therofore always free from repetition</div>
+        <div class="item auto">ITEM 4</div>
+    </div>
+
+    <!-- &nbsp : adiciona um espaço em branco no texto -->
+    <br>
+    <h1>AAA: &nbsp &nbspalign-self: flex-start</h1>
+    <h1>123: &nbsp &nbsp align-self: flex-end</h1>
+    <h1>Lorem:           align-self: stretch</h1>
+    <h1>ITEM 4:          align-self: center</h1>
+    <br>
+    <div class="container flex-direction-columun">
+        <div class="item flex-start">AAA</div>
+        <div class="item flex-end">123</div>
+        <div class="item stretch">Lorem Ipsum is therofore always free from repetition</div>
+        <div class="item center">ITEM 4</div>
+    </div>
+
+</body>
+</html>

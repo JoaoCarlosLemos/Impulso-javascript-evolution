@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex-Shrink</title>
+
+    <!--
+
+        ----- FLEX-SHRINK -----
+
+        - define a capacidade de redução
+
+        OBS - são definidos valores numericos (0 / 1 / 2)
+
+    -->
+
+    <style>
+
+        body{
+            background: white;
+            color:black;
+            margin-top:10px;
+        }
+
+        .container{
+            max-width:350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex; /*inicializador do contener*/
+        }
+
+        .item{
+            background-color: coral;
+            color:white;
+            text-align:center;
+            font-size: 24px;
+            margin:5px;
+        }
+
+        .flex-grow-1{
+            flex-grow: 1; /*define a proprcionalidade de crescimentos dos itens, respeitando o tamanho dos seus conteúdos internos*/
+        }
+
+        .flex-shrink-0{
+            flex-shrink: 0; /*define a capacidade de redução*/
+            flex-basis: 100px; /*define o tamanho inicial antes da distribuição o espaço restante dentro do container*/
+        }
+
+        .flex-shrink-1{
+            flex-shrink: 1; /*define a capacidade de redução*/
+        }
+
+        .flex-shrink-2{
+            flex-shrink: 2; /*define a capacidade de redução*/
+            flex-basis: 100px; /*define o tamanho inicial antes da distribuição o espaço restante dentro do container*/
+        }
+
+        .flex-shrink-3{
+            flex-shrink: 3; /*define a capacidade de redução*/
+            flex-basis: 100px; /*define o tamanho inicial antes da distribuição o espaço restante dentro do container*/
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>flex-shrink - 1 + flex-grow - 1</h1>
+    <div class="container">
+        <div class="item flex-grow-1 flex-shrink-1 ">A</div>
+        <div class="item flex-grow-1 flex-shrink-1 ">B</div>
+        <div class="item flex-grow-1 flex-shrink-1 ">C</div>
+        <div class="item flex-grow-1 flex-shrink-1 ">D</div>
+        <div class="item flex-grow-1 flex-shrink-1 ">E</div>
+    </div>
+
+    <div class="container">
+        <div class="item flex-grow-1 flex-shrink-1 ">A</div>
+        <div class="item flex-grow-1 flex-shrink-1 ">The generated Lorem Ipsum</div>
+        <div class="item flex-grow-1 flex-shrink-1 ">C</div>
+        <div class="item flex-grow-1 flex-shrink-1 ">D</div>
+    </div>
+
+    <div class="container">
+        <div class="item flex-grow-1 flex-shrink-1 ">A</div>
+        <div class="item flex-grow-1 flex-shrink-1 ">The generated</div>
+        <div class="item flex-grow-1 flex-shrink-1 ">C</div>
+        <div class="item flex-grow-1 flex-shrink-1 ">D</div>
+    </div>
+
+
+    <h1>flex-shrink - 0 + flex-grow - 1 + flex-basis - 100px</h1>
+    <div class="container">
+        <div class="item flex-grow-1 flex-shrink-0 ">A</div>
+        <div class="item flex-grow-1 flex-shrink-0 ">The generated</div>
+        <div class="item flex-grow-1 flex-shrink-0 ">C generated</div>
+        <div class="item flex-grow-1 flex-shrink-0 ">D</div>
+    </div>
+
+    <h1>flex-shrink - min + flex-grow - 1 + flex-basis - 100px </h1>
+    <div class="container">
+        <div class="item flex-grow-1 flex-shrink-1 ">A</div>
+        <div class="item flex-grow-1 flex-shrink-2 ">The generated</div>
+        <div class="item flex-grow-1 flex-shrink-2 ">C</div>
+        <div class="item flex-grow-1 flex-shrink-3 ">D</div>
+    </div>
+
+</body>
+</html>

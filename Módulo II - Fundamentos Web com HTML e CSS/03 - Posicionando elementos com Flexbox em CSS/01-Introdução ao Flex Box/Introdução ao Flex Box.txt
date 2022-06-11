@@ -1,0 +1,30 @@
+FLEX CONTAINER -  é a  tag que envolve os itens, será nela que ireimos aplicar a propriedade "DISPLAY:FLEX"
+		  Transforma todos os seus itens filhos em FLEX ITENS.
+
+                  PROPRIEDADES 
+
+		  display           // inicializador do contener
+		  flex-direction    // faz o direcionamento dos itens - Linha/Coluna (row/column)
+		  flex-wrap         // se aplica para quebra de linha / não quebra de linha (wrap/nowrap)
+		  flex-flow         // abreviação para o flex-direction / flex-wrap
+		  justifly-content  // alinha os itens do conteiner conforme a sua direção e trata dos espaçamentos entre eles (flex-start/flex-end/center/space-between/space-around)
+		  align-items       // alinha os itens conforme o seu eixo do container (center/stretch/flex-start/flex-end/baseline)
+		  align-content     // alinha as linhas do container (center/stretch/flex-start/flex-end/space-between/space-around)
+
+FLEX ITEM -       São os elementos filhos diretos do FLEX CONTAINER,e também podem se tornar FLEX CONTAINER.
+
+                  PROPRIEDADES
+   
+                  flex-grow	// define o fator de crescimento (0 / 1 / 2)
+                  flex-basis    // define o tamanho inicial antes da distribuição o espaço restante dentro do container (auto / 0 / px % em)
+                  flex-shrink   // define a capacidade de redução (0 / 1 / 2)
+                  flex          // abreviação para flex-grow / flex-shrink / flex-basis   
+                  order         // ordem de distribuição e listagem dos itens (0 / 1 / 2) OBS. pode ser usado valores negativos
+                  align-self    // define um alilhamento expecífico do item dentro do container (auto/flex-start/flex-end/center/stretch/baseline)
+
+
+EXTENSÃO - VS CODE - HTML Preview - Chamada :- ctrl+shift+v / apreta control+shift+p e digita HTML Preview
+               
+
+
+

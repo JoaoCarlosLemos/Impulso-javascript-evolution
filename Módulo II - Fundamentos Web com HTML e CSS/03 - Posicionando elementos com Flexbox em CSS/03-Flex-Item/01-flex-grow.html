@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex-Grow</title>
+
+    <!--
+
+        ----- FLEX-GROW -----
+
+        - define a proprcionalidade de crescimentos dos itens, respeitando o tamanho dos seus conteúdos internos.
+
+                ----------------------------------------------------------------------------------
+        OBS. ** não irá funcionar caso tenhamos adicionado justify-content ao nosso flex container **
+                ----------------------------------------------------------------------------------
+
+        OBS. **ao se trabalhar com flex-grow, só podemos ter numero (será 0, ou algum número relacionado a proporção de crescimento) **
+
+    -->
+
+    <style>
+
+        body{
+            background: white;
+            color:black;
+            margin-top:10px;
+        }
+
+        .container{
+            display: flex; /*inicializador do contener*/
+            border: 2px solid black;
+            max-width: 300px;
+            /*justify-content: center;  /** não irá funcionar caso tenhamos adicionado justify-content ao nosso flex container **/ 
+        }
+
+        .item{
+            background-color: orangered;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color:white;
+        }
+
+        .fg-0{
+            flex-grow: 0; /*define a proprcionalidade de crescimentos dos itens, respeitando o tamanho dos seus conteúdos internos*/
+        }
+
+        .fg-1{
+            flex-grow: 1; /*define a proprcionalidade de crescimentos dos itens, respeitando o tamanho dos seus conteúdos internos*/
+        }
+
+        .fg-2{
+            flex-grow: 2; /*define a proprcionalidade de crescimentos dos itens, respeitando o tamanho dos seus conteúdos internos*/
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>flex-grow: 0</h1>
+    <div class="container">
+        <div class="item fg-0">A</div>
+        <div class="item fg-0">B</div>
+        <div class="item fg-0">C</div>
+        <div class="item fg-0">D</div>
+    </div>
+
+    <h1>flex-grow: 1</h1>
+    <div class="container">
+        <div class="item fg-1">A</div>
+        <div class="item fg-1">B</div>
+        <div class="item fg-1">C</div>
+        <div class="item fg-1">D</div>
+    </div>
+
+    <h1>flex-grow: alternados (A-1 B-2 C-2 D-1)</h1>
+    <div class="container">
+        <div class="item fg-1">A</div>
+        <div class="item fg-2">B</div>
+        <div class="item fg-2">C</div>
+        <div class="item fg-1">D</div>
+    </div>
+
+    <h1>flex-grow: 2 (respeitando o tamanho do conteúdo dos itens)</h1>
+    <div class="container">
+        <div class="item fg-2">AAAAAA</div>
+        <div class="item fg-2">BBB</div>
+        <div class="item fg-2">C</div>
+        <div class="item fg-2">D</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align-Content</title>
+
+    <!--
+
+        ----- ALIGN-CONTENT -----
+
+        - é a propriedade responsável por tratar o alinhamento das linhas do container 
+          em relação ao eixo vertical do container
+
+	    PRECISAMOS QUE:
+
+	    - o container utilize quebra de linhas
+	    - a altura do container seja maior que a soma das linhas dos itens
+
+
+        center        - alinhamento dos itens ao centro 
+        stretch       - padrão, e os flex itens cresçam igualmente
+        flex-start    - início do container 
+        flex-end      - final do container
+        space-between - cria um espaçamento igual entre os elementos
+	    space-around  - os espaçamentos do meio são 2x maiores que o inicio e final
+
+    -->
+
+    <style>
+
+        body{
+            background: white;
+            color:black;
+            margin-top:10px;
+        }
+
+        .container{
+            height: 350px; ; /* a altura do container seja maior que a soma das linhas dos itens*/
+            max-width: 300px;
+            display: flex; /*inicializador do contener*/
+            flex-wrap: wrap; /*se aplica para quebra de linha */
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch{
+            align-content: stretch; /*padrão, e os flex itens cresçam igualmente*/
+        }
+
+        .center{
+            align-content: center; /*alinhamento dos itens ao centro */
+        }
+
+        .flex-start{
+            align-content: flex-start; /*início do container*/
+        }
+
+        .flex-end{
+            align-content: flex-end; /*final do container*/
+        }
+
+        .space-around{
+            align-content: space-around;/*os espaçamentos do meio são 2x maiores que o inicio e final*/
+        }
+
+        .space-between{
+            align-content: space-between;/*cria um espaçamento igual entre os elementos*/
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>stretch</h1>
+    <div class="container stretch">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore always free</div>
+        <div class="item">Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+    </div>
+
+    <h1>center</h1>
+    <div class="container center">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore always free</div>
+        <div class="item">Lorem Ipsum is therefore from repetition, injected humour, or non-characteristic</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+    </div>
+
+    <h1>flex-start</h1>
+    <div class="container flex-start">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore always free</div>
+        <div class="item">Lorem Ipsum is therefore from repetition, injected humour, or non-characteristic</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+    </div>
+
+    <h1>flex-end</h1>
+    <div class="container flex-end">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore always free</div>
+        <div class="item">Lorem Ipsum is therefore from repetition, injected humour, or non-characteristic</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+    </div>
+
+    <h1>space-around</h1>
+    <div class="container space-around">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore always free</div>
+        <div class="item">Lorem Ipsum is therefore from repetition, injected humour, or non-characteristic</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+    </div>
+
+    <h1>space-between</h1>
+    <div class="container pace-between">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore always free</div>
+        <div class="item">Lorem Ipsum is therefore from repetition, injected humour, or non-characteristic</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+    </div>
+
+</body>
+</html>
