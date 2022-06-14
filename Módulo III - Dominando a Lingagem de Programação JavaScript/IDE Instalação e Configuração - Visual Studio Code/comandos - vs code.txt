@@ -1,0 +1,8 @@
+ctrl+{       = Aumenta espaçamento de identação
+ctrl+´       = Diminue espaçamento de identação
+ctrl+f       = Localizar / Subistituir
+ctrl+p       = Busca de arquivos
+crtl+shift+p = Busca por comandos
+
+shift+alt+a  = ativa/desativar bloco de comentario
+
