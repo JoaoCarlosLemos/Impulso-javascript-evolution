@@ -1,0 +1,211 @@
+
+/*---------- GERAL ----------*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(-45deg, #ffffff,#ffffff,#e73c7e,#ffffff,#ffffff);
+	background-size: 400% 600%;
+	animation: degrade 15s ease infinite;
+}
+
+.sessao-principal {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;  
+}
+
+
+/*---------- SESSÃO ESQUERDA ----------*/
+
+
+.sessao-esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.sessao-esquerda img {
+    width: 120%;;
+}
+
+
+/*---------- SESSÃO DIREITA ----------*/
+
+
+.sessao-direita {
+    display: flex;
+    align-items: center; 
+    justify-content: space-around; 
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    border-radius: 0px 30px;
+    box-shadow: 3px -2px 3px rgba(211, 211, 211, 0.354);
+}
+
+
+/*---------- SESSÃO DIREITA - CONTÊINER-SUPERIOR ----------*/
+
+
+.conteiner:nth-child(1) {
+    min-height: 19rem;
+}
+
+.logo-instagram {
+    height: 3rem;
+}
+
+.foto-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.foto-perfil img {
+    height: 9rem;
+}
+
+.login-instagram {
+    background-image: linear-gradient(to right, #f1745d , #ba3494);
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.login-instagram:hover{
+    background-image: linear-gradient(to right, #ba3494, #f1745d );
+}
+
+.login-instagram:active{
+    transform: scale(0.8);
+}
+
+.logout-instagram {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.logout-instagram:hover{
+    color: #f61900;
+}
+
+
+/*---------- SESSÃO DIREITA - CONTÊINER-INFERIOR ----------*/
+
+
+.confirmacao-usuario {
+    color: rgb(160, 160, 160);
+}
+
+.link {
+    color: #0095f6;
+}
+
+.link:hover {
+    color: #f61900;
+    cursor:pointer;
+}
+
+
+/*---------- SESSÃO DIREITA - APLICATIVO ----------*/
+
+
+.aplicativo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.download-link {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.download-link:nth-child(1) {
+    background-image: url('./src/imagens/apple-button.png');
+}
+
+.download-link:nth-child(2) {
+    background-image: url('./src/imagens/googleplay-button.png');
+}
+
+
+/*---------- ANIMAÇÃO DE PLANO DE FUNDO ----------*/
+
+
+@keyframes degrade {
+	0%   {
+        background-position: 0% 50%;
+    }
+	50%  {
+        background-position: 50% 0%;
+    }
+	100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/*---------- AJUSTES DE RESOLUÇÕES ----------*/
+
+
+@media (max-width: 1024px) {
+    .sessao-principal {width: 90%;}
+}
+
+@media (max-width: 650px) {
+    body {background-color: #ffffff;}
+    .sessao-principal {width: 90%;}
+    .sessao-esquerda {display: none;}
+    .sessao-direita {width: 100%;}
+    .conteiner {border: 1px solid transparent;}
+}
+
+
+
+
+
+
