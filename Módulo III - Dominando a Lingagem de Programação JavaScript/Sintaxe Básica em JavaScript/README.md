@@ -380,7 +380,7 @@
                      <td><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions">tipos de função</a></td>
                   </tr>
                   <tr>
-                     <td><a href="https://github.com/DianaMartine/curso-dio-sintaxe-basica-javascript/blob/main/Aula%206%20-%20aprofundando%20em%20fun%C3%A7%C3%B5es/calculadora.js">calculadora</a></td>
+                     <td><a href="https://github.com/JoaoCarlosLemos/Impulso-javascript-evolution/blob/main/M%C3%B3dulo%20III%20-%20Dominando%20a%20Lingagem%20de%20Programa%C3%A7%C3%A3o%20JavaScript/Sintaxe%20B%C3%A1sica%20em%20JavaScript/Aula%206%20-%20aprofundando%20em%20fun%C3%A7%C3%B5es/calculadora.js">calculadora</a></td>
                   </tr>                 
                </tbody>
             </table>
