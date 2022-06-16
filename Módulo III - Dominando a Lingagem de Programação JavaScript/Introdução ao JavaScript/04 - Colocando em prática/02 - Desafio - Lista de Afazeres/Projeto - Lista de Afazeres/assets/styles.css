@@ -1,0 +1,106 @@
+
+/*---------- GERAL ----------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+
+/*---------- CONTAINER ----------*/
+
+
+#container{
+  width:500px;
+  min-height: 300px;
+  background: rgba(164, 196, 176, 0.199);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 0px 30px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.164);
+  border:2px solid rgba(66, 92, 64, 0.137);;
+}
+
+.cabecario{
+  display: flex;
+  align-items: center;
+}
+
+h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: normal;
+  letter-spacing: 3px;
+  font-size:28px ;
+  padding:3px 0px;
+  color:#749b8e;
+  margin: 25px 0px;
+  border-bottom:1px solid #749b8e; ;
+  border-top:1px solid #749b8e; ;
+  
+}
+
+img{
+  width: 40px;
+  height: 40px;
+  margin: 0px 10px;
+}
+
+input{
+  padding: 5px;
+  border-radius: 0px 5px;
+  border: none;
+  box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.158);
+}
+
+button {
+  border: 1px solid rgb(75, 173, 136);
+  border-radius: 0px 5px;
+  background-color: rgb(248, 252, 249);
+  color: rgb(36, 153, 89);
+  text-align: center;
+  padding: 5px;
+  margin-left: 5px;
+  box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.103);
+}
+
+button:hover{
+  border: 1px solid rgb(105, 197, 255);
+  background-color: rgb(237, 245, 248);
+  color: rgb(75, 170, 230);
+  cursor: pointer;
+}
+
+button:active{
+  transform: scale(0.8);
+}
+
+
+/*---------- TAREFAS ----------*/
+
+.checkbox{
+  background: yellow;
+}
+
+.tarefa {
+  display: flex;
+  align-items: center;
+  margin: 5px 0px;
+  position: relative;
+  left: -95px;
+}
+
+:checked + label {
+  text-decoration: line-through;
+  color: rgb(255, 0, 0);
+}

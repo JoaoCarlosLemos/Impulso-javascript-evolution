@@ -1,0 +1,12 @@
+
+
+OBS. comandos executados no console do navegador
+
+
+document.getElementsByTagName('h1')
+
+var elemento = document.getElementsByTagName('h1')[0]
+
+elemento
+
+elemento.style.color='red'
